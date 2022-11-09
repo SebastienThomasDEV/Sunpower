@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@600&display=swap');
+
+h1,h2,h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p, a {
+    font-family: 'Inter', sans-serif;
+}
+
+/* STYLE DE LA BANNIERE TITRE PAGE GROUPE */
+
+div.title-content {
+    height: fit-content;
+    padding: 45px 10px 45px 10px;
+    margin-left: -10px;
+    margin-right: -10px;;
+    width: 100%;
+    margin-top: 19em;
+    background: #181925;
+    box-shadow: 0px -10px 12px rgba(0, 0, 0, 0.25), 0px 10px 12px rgba(0, 0, 0, 0.15);
+    transform: rotate(-3.51deg);
+    text-align: center;
+    color: var(--main-yellow-color);
+}
+
+/* STYLE DU TITRE DE LA BANNIRE PAGE GROUPE */
+div.title-content h2,
+div.title-content h3,
+div.title-content hr {
+    transform: rotate(3.51deg)!important;
+}
+div.title-content hr {
+    width: 5%;
+    background-color: var(--main-yellow-color);
+    border: none;
+    height: 1px;
+}
+
+/* STYLE DE LA BANNIERE TITRE FONDATEURS */
+
+div.title-content-2 {
+    height: fit-content;
+    padding: 45px 10px 45px 10px;
+    margin-left: -10px;
+    margin-right: -10px;;
+    width: 100%;
+    margin-top: 100px;
+    background: #181925;
+    box-shadow: 0px -10px 12px rgba(0, 0, 0, 0.25), 0px 10px 12px rgba(0, 0, 0, 0.15);
+    transform: rotate(3.51deg);
+    text-align: center;
+    color: var(--main-yellow-color);
+}
+
+/* STYLE DE LA BANNIERE TITRE FONDATEURS */
+div.title-content-2 h2,
+div.title-content-2 h3,
+div.title-content-2 hr {
+    transform: rotate(-3.51deg)!important;
+}
+
+/* STYLE DU SEPARATEUR LA BANNIERE TITRE FONDATEURS */
+div.title-content-2 hr {
+    width: 15%;
+    background-color: var(--main-yellow-color);
+    border: none;
+    height: 1px;
+}
+
+/* STYLE BANNIERE TITRE PARTENAIRES */
+div.title-content-3 {
+    height: fit-content;
+    padding: 45px 10px 45px 10px;
+    margin-left: -10px;
+    margin-right: -10px;;
+    width: 100%;
+    margin-top: 50px;
+    background: #181925;
+    box-shadow: 0px -10px 12px rgba(0, 0, 0, 0.25), 0px 10px 12px rgba(0, 0, 0, 0.15);
+    transform: rotate(3.51deg);
+    text-align: center;
+    color: var(--main-yellow-color);
+}
+
+/* STYLE TITRE PARTENAIRES */
+div.title-content-3 h2,
+div.title-content-3 h3,
+div.title-content-3 hr {
+    transform: rotate(-3.51deg)!important;
+}
+
+
+/* STYLE SEPARATEUR TITRE PARTENAIRES */
+div.title-content-3 hr {
+    width: 15%;
+    background-color: var(--main-yellow-color);
+    border: none;
+    height: 1px;
+}
+
+/* STYLE DU CONTENU DE LA PAGE GROUPE */
+div.group-content {
+    width: 80%;
+    margin: 80px auto 0 auto;
+}
+
+
+/* STYLE DES TEXTES DES CARDS FONDATEURS*/
+div.group-content p {
+    color: var(--main-font-color);
+    text-align: center;
+}
+
+
+/* STYLE DES IMAGES DES CARDS FONDATEURS*/
+div.group-content p img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 30px;
+}
+
+/* STYLE DES CONTENU FONDATEURS */
+div.founders-content {
+    width: 100%;
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+div.founders-content div.cards {
+    width: 50em;
+}
+div.founders-content div.cards div.card {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 100px 0;
+}
+div.founders-content div.cards div.card img.founder-img {
+    width: 7em;
+    height: auto;
+    border-radius: 5px;
+}
+div.founders-content div.cards div.card div.founder-infos {
+    width: 50%;
+    -webkit-box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.5); 
+    box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.5);
+}
+div.founders-content div.cards div.card div.founder-infos p {
+    padding: 10px 15% 10px 15%;
+}
+div.founders-content div.cards div.card:nth-child(1) img {
+    margin-top: -100px;
+    margin-left: -120px;
+    float: left;
+    -webkit-box-shadow: 30px 28px 15px -15px rgba(0,0,0,0.5); 
+    box-shadow: 30px 28px 15px -15px rgba(0,0,0,0.5);
+}
+div.founders-content div.cards div.card:nth-child(1) div.founder-infos {
+    background-color: var(--main-yellow-color);
+    border-radius: 5px;
+}
+div.founders-content div.cards div.card:nth-child(2) img {
+    margin-top: -100px;
+    margin-right: -120px;
+    float: right;
+    -webkit-box-shadow: -30px 30px 15px -15px rgba(0,0,0,0.5); 
+    box-shadow: -30px 30px 15px -15px rgba(0,0,0,0.5);
+}
+div.founders-content div.cards div.card:nth-child(2) div.founder-infos {
+    background-color: var(--medium-gray);
+    color: var(--main-font-color);
+    border-radius: 5px;
+    text-align: right;
+}
+div.founders-content div.cards div.card:nth-child(3) img {
+    margin-top: -100px;
+    margin-left: -120px;
+    float: left;
+    -webkit-box-shadow: 30px 28px 15px -15px rgba(0,0,0,0.5); 
+    box-shadow: 30px 28px 15px -15px rgba(0,0,0,0.5);
+}
+div.founders-content div.cards div.card:nth-child(3) div.founder-infos {
+    background-color: var(--main-green-color);
+    color: var(--main-font-color);
+    border-radius: 5px;
+}
+
+/* STYLE DES CONTENUS PARTENAIRES */
+div.partners-content {
+    margin: 80px 0 50px 0;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+/* STYLE DES IMAGES PARTENAIRES */
+div.partners-content img {
+    width: 10%;
+    height: 10%;
+    margin: 0 20px 0 20px;
+}

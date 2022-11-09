@@ -1,0 +1,33 @@
+/* PASSAGE CARTES FONDATEURS EN VERSION MOBILE */
+
+@media (max-width: 862px) {
+    div.founders-content div.cards div.card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.founders-content div.cards div.card img {
+        -webkit-box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.5)!important; 
+        box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.5)!important;
+    }
+
+    div.founders-content div.cards div.card div.founder-infos {
+        width: 320px;
+    }
+
+    div.founders-content div.cards div.card:nth-child(1) img {
+        margin-top: -75px;
+        margin-right: -20px;
+        float: right;
+    }
+    div.founders-content div.cards div.card:nth-child(2) img {
+        margin-top: -75px;
+        margin-left: -20px;
+        float: left;
+    }
+    div.founders-content div.cards div.card:nth-child(3) img {
+        margin-top: -75px;
+        margin-right: -20px;
+        float: right;
+    }
+}

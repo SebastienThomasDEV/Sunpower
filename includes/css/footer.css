@@ -1,0 +1,66 @@
+footer {
+    font-size: 0.6rem;
+    bottom: 0;
+    background-color: var(--main-darker-color);
+}
+
+/* LIENS FOOTER */
+
+#upper-footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 15px 15px 15px;
+    height: 200px;
+    align-items: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--main-yellow-color);
+}
+
+/* COPYRIGHT ET MENTIONS LEGALES */
+
+.bottom-footer {
+    background-color: var(--medium-gray);
+    color: white;
+    height: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* FORMULAIRE NEWSLETTER */
+
+#logo-and-form {
+    text-align: center;
+    margin-top: -40px;
+}
+
+    form input{
+        background-color: var(--main-yellow-color);
+        border-radius: 3px;
+        border: none;
+    }
+
+        form input#mail {
+            height: 22px;
+            padding: 5px;
+        }
+
+            form input#mail::placeholder {
+                color: var(--main-darker-color);
+            }
+
+        form input#subscribe {
+            height: 32px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+h3.sub-news-txt {
+    margin-top: -15px;
+    color: var(--main-font-color);
+}
+
+

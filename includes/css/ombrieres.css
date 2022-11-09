@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@600&display=swap');
+
+
+/* Polices */
+h1,h2,h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p, a {
+    font-family: 'Inter', sans-serif;
+}
+
+/* BANNIERE TITRE */
+div.title-content {
+    height: fit-content;
+    padding: 20px 10px 20px 10px;
+    margin-left: -10px;
+    margin-right: -10px;;
+    width: 100%;
+    margin-top: 19em;
+    background: #181925;
+    box-shadow: 0px -10px 12px rgba(0, 0, 0, 0.25), 0px 10px 12px rgba(0, 0, 0, 0.15);
+    transform: rotate(-3.51deg);
+    text-align: center;
+    color: var(--main-yellow-color);
+}
+
+div.title-content h2,
+div.title-content h3,
+div.title-content hr {
+    transform: rotate(3.51deg)!important;
+}
+div.title-content hr {
+    width: 5%;
+    background-color: var(--main-yellow-color);
+    border: none;
+    height: 1px;
+}
+/* PRESENTATION DES OMBRIERES */
+/* PREMIERE LIGNE */
+
+div.grid-content-1 {
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+    div.grid-content-1 div {
+        width: 370px;
+        min-height: 370px;
+        max-height: 470px;
+        padding: 30px;
+        border-radius: 5px;
+        margin: 10px 10px 10px 10px;
+    }
+
+    div.grid-content-1 div p {
+        font-size: 20px;
+        text-align: left;
+        letter-spacing: 3px;
+        line-height: 25px;
+    }
+
+    div.grid-content-1 div:nth-child(1) {
+        background-color: var(--main-yellow-color);
+        order: 1;
+    }
+    div.grid-content-1 div:nth-child(2) {
+        background-image: url("../assets/imgs/panneausolaire.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        order: 2;
+    }
+
+/* DEUXIEME LIGNE */
+
+div.grid-content-2 {
+    margin-top: -15px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+    div.grid-content-2 div {
+        width: 370px;
+        height: 370px;
+        padding: 30px;
+        border-radius: 5px;
+        margin: 10px 10px 10px 10px;
+    }
+
+    div.grid-content-2 div p {
+        font-size: 20px;
+        text-align: left;
+        letter-spacing: 3px;
+        line-height: 25px;
+    }
+
+    div.grid-content-2 div:nth-child(1) {
+        background-image: url("../assets/imgs/images.jpg");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        order: 3;
+    }
+    div.grid-content-2 div:nth-child(2) {
+        background-color: var(--main-green-color);
+        color: var(--main-font-color);
+        order: 4;
+    }

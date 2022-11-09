@@ -1,0 +1,116 @@
+<!-- Balise inline script obligé car on charge un code html par le biais de jquery (les elements du dom ne se charge pas pour la fonction pour valider les champs)-->
+<script>validity()</script>
+<div id="form-container">
+    <div class="select-type">
+        <div class="cards">
+            <a onClick="load_pro()">
+                <div class="card pro">
+                    <div class="icon-type">
+                        <i class="fa-solid fa-briefcase fa-2x"></i>
+                    </div>
+                    <div class="name-type">
+                        <p>Entreprise<br>Collectivité</p>
+                    </div>
+                </div>
+            </a>
+            <a onClick="load_lambda()">
+                <div class="card lambda">
+                    <div class="icon-type">
+                        <i class="fa-solid fa-user-group fa-2x"></i>
+                    </div>
+                    <div class="name-type">
+                        <p>Particulier</p>
+                    </div>
+                </div>
+            </a>
+            <a onClick="load_syndic()">
+                <div class="card syndic">
+                    <div class="icon-type">
+                        <i class="fa-solid fa-building fa-2x"></i>
+                    </div>
+                    <div class="name-type">
+                        <p>Syndic de copropriété</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Formulaire -->
+    <div class="mailing-form" id="mailing-form">
+        <div class="mailing_wrapper">
+            <div class="infos pro">
+                <h2>Service pro</h2>
+                <hr>
+                <div class="details">
+                    <span><i class="fa-solid fa-phone"></i>
+                        <p>08.32.21.43.12</p>
+                    </span>
+                    <span><i class="fa-solid fa-location-dot"></i>
+                        <p>30 Rue du soleil<br>34000 Montpellier<br>FRANCE</p>
+                    </span>
+                    <span><i class="fa-solid fa-envelope"></i>
+                        <p>sales@sunpower.com</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form_wrapper">
+                <form method="?">
+                    <div class="sidebyside">
+                        <div>
+                            <label for="societyname">Raison social</label>
+                            <input class="check" type="text" name="societyname" id="societyname" placeholder="ex: Sunpower">
+                        </div>
+                        <div>
+                            <label for="qualite">Qualité</label>
+                            <input class="check" type="text" name="qualite" id="qualite" required placeholder="ex: Dirigeant">
+                        </div>
+                    </div>
+                    <div class="sidebyside">
+                        <div>
+                            <label for="lname">Nom</label>
+                            <input class="check" type="text" name="lname" id="lname" required placeholder="ex: Doe">
+                        </div>
+                        <div>
+                            <label for="fname">Prénom</label>
+                            <input class="check" type="text" name="fname" id="fname" required placeholder="ex: John">
+                        </div>
+
+                    </div>
+                    <div class="sidebyside">
+                        <div>
+                            <label for="email">Email</label>
+                            <input class="check" type="email" name="email" id="email"
+                            required placeholder="ex: johnd@mail.com">
+                        </div>
+                        <div>
+                            <label for="adresse">Adresse</label> 
+                            <input class="check" type="text" name="adresse" id="adresse"
+                            required placeholder="ex: 45 rue du soleil 34000">
+                        </div>
+                    </div>
+                    <div class="sidebyside upload">
+                        <div>
+                            <label for="tel">Téléphone</label>
+                            <input class="check" type="tel" maxlenght="10" minlength="10" name="tel" id="tel" required placeholder="ex: 0823 00 00 00">
+                        </div>
+                        
+                        <div class="label_wrapper">
+                            <input type="file" name="file" id="file" class="inputfile" onclick="upload()" accept="application/pdf" />
+                            <label for="file" class="label"><i class="fa-solid fa-upload"></i>Joindre un fichier</label>
+                        </div>
+                    </div>
+                    <textarea name="description" id="description" required placeholder="Description"></textarea><br>
+                    <input id="submit_btn" type="submit" value="Envoyer ➝">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Restriction aux chiffres de l'input téléphone (peut pas être ajouté dans un fichier JS car html chargé par une fonction)-->
+<script>
+    $('#tel').on('keypress', function(e){
+    return e.metaKey || e.which <= 0 || e.which == 8 || /[0-9]/.test(String.fromCharCode(e.which));
+    });
+</script>

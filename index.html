@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Sunpower</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sunpower, retrouve ton énergie !">
+    <meta name="keywords"
+        content="Sunpower, solaire, panneau, panneaux, ombrieres, ombriere, Herault, Toulouse, Montpellier, voiture, énergie, innovation, écologie, recharge, rechargement">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/includes/assets/icons/browserconfig.xml">
+    <meta name="theme-color" content="#242530">
+    <link rel="stylesheet" href="/includes/css/main.css">
+    <link rel="stylesheet" href="/includes/css/mobile/main.mobile.css">
+    <link rel="stylesheet" href="/includes/css/header.css">
+    <link rel="stylesheet" href="/includes/css/mobile/header.mobile.css">
+    <link rel="stylesheet" href="/includes/css/footer.css">
+    <link rel="stylesheet" href="/includes/css/mobile/footer.mobile.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+    <link href="/includes/css/fa/all.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/includes/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/includes/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/includes/assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/includes/assets/icons/site.webmanifest">
+    <link rel="mask-icon" href="/includes/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/includes/assets/icons/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide-core.min.css"
+        integrity="sha256-ZAXImCY06SjVuIrJfWUETkyCctX5aGdL1AVEBX5CxZA=" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bfcfa6ccbd.js" crossorigin="anonymous"></script>
+    <script defer src="/includes/js/fa/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js" defer></script>
+    <script src="/includes/js/map.js"></script>
+    <script src="/includes/js/main.js" defer></script>
+    <script src="/includes/js/scroll.js" defer></script>
+    <script src="/includes/js/nav.js" defer></script>
+    <script src="/includes/js/slider.js" defer></script>
+    <script src="/includes/js/anim.js" defer></script>
+
+<body>
+
+    <!--  Navbar -->
+
+    <nav id="navbar" class="navbar" aria-label="navbar">
+        <div class="nav-head">
+            <div>
+                <a href="/"><img src="/includes/assets/icons/mstile-70x70.png" alt="logo sunpower" id="logo_icon"></a>
+                <a href="/"><img src="/includes/assets/icons/logo.svg" alt="logo sunpower" id="logo_text"></a>
+            </div>
+            <button class="burger" type="button" aria-label="activation de la navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <ul class="nav-links">
+            <li><a class="nav-link" id="home" href="/">Accueil</a></li>
+            <li><a class="nav-link" id="ombrieres" href="/ombrieres">Ombrières</a></li>
+            <li><a class="nav-link" id="group" href="/groupe">Groupe</a></li>
+            <li><a class="nav-link" id="contact" href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="body-content">
+
+        <!-- Bannière de haut de page -->
+
+        <div class="banner-top">
+            <img src="/includes/assets/background-top.jpg" alt="Bannière">
+        </div>
+        <div class="title-content" aria-label="Présentation">
+            <h2>ㅤ</h2>
+            <hr>
+        </div>
+
+        <div class="main_wrapper" aria-label="Slider">
+
+            <!-- Slider -->
+
+            <section class="desc_text">
+                <h2 id="desc_title" class="desc_title">A la pointe de la technologie verte <br>
+                    Panneaux et ombrières solaires
+                </h2>
+                <div>
+                    <h3 id="subtitle_1">Implantation</h3>
+                    <p id="text_1" class="text">Implanté dans la région Occitanie et travaillant avec les métropoles
+                        montpelliéraines et toulousaines,
+                        Sunpower vous accompagne dans votre projet d’installation de panneaux et d’ombrières solaires.
+                    </p>
+                </div>
+                <div>
+                    <h3 id="subtitle_2">Nos engagements</h3>
+                    <p id="text_2" class="text">Pleinement engagé dans la lutte contre le changement climatique et dans
+                        la
+                        transition énergétique,
+                        Sunpower voit dans chaque projet l’opportunité de mettre en place une action en faveur de
+                        l’environnement.
+                        Les ombrières solaires: un concept clé de l’énergie verte.
+                        Avec des panneaux à haut rendement, il est désormais possible de charger vos voitures
+                        électriques
+                        grâce à l’énergie solaire.</p>
+                </div>
+            </section>
+            <section class="splide" aria-label="Image d'illustration">
+                <ul class="splide__pagination"></ul>
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li id="custom" class="splide__slide">
+                            <img src="/includes/assets/imgs/ombriere-parking.jpg" alt="">
+                        </li>
+                        <li id="custom" class="splide__slide">
+                            <img src="/includes/assets/imgs/panneaux-solaires-toit-maison-tuiles.jpg" alt="">
+                        </li>
+                        <li id="custom" class="splide__slide">
+                            <img src="/includes/assets/imgs/fibre.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- Affichage de la carte interactive avec les différents endroits d'implantation marqués avec des marqueurs-->
+
+        <div class="title-map">
+            <h2>Nos implantations</h2>
+            <hr>
+        </div>
+
+        <div id="map" aria-label="Carte interactive avec la position des implantations"></div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <!-- Liens footer -->
+
+        <div id="upper-footer">
+            <div id="footer-left">
+                <div class="footer-links">
+                    <a href="/">
+                        <h2>Accueil</h2>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="/ombrieres">
+                        <h2>Ombrières</h2>
+                    </a>
+                </div>
+            </div>
+            <div id="footer-middle">
+                <div class="footer-links">
+                    <a href="/groupe#about-us">
+                        <h2>Qui sommes-nous ?</h2>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="/groupe#partners">
+                        <h2>Nos partenaires</h2>
+                    </a>
+                </div>
+            </div>
+            <div id="footer-right">
+                <div class="footer-links">
+                    <a href="/politic-confidentiality/">
+                        <h2>Politique de confidentialité</h2>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="/contact/">
+                        <h2>Nous contacter</h2>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Formulaire newsletter-->
+
+            <div id="logo-and-form">
+                <form action="https://bit.ly/3TG3Iyl" method="POST">
+                    <img src="/includes/assets/icons/mstile-70x70.png" alt="logo">
+                    <h3 class="sub-news-txt">Inscriez-vous à la newsletter</h3>
+                    <input type="email" name="email" placeholder="Votre adresse mail" id="mail" />
+                    <input type="submit" id="subscribe" value="S'abonner">
+                </form>
+            </div>
+        </div>
+
+        <!-- Cpyright et mentions légales -->
+
+        <div class="bottom-footer">
+            <p>© Sunpower | Tous droits réservés</p>
+            <p>Sunpower, retrouve ton énergie !</p>
+        </div>
+    </footer>
+
+    <!-- Bouton pour aller en haut de page -->
+
+    <div class="top_btn" id="top_btn" onmouseover="ch_op_b(this)" onmouseout="ch_op_a(this)" onClick="GoTop()"
+        aria-label="Bouton vers le haut"><i class="fa-solid fa-arrow-up fa-2x"></i></div>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4Gw-yZQM1X7S6bq0CK3M51MTQGzV9KrI&callback=initMap"
+        defer></script>
+    <script src="/includes/js/scrollreveal.js"></script>
+</body>
+
+</html>

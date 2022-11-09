@@ -1,0 +1,55 @@
+/* AJUSTEMENT PRESENTATION MAIN WRAPPER */
+
+@media (min-width: 832px) {
+    .main_wrapper {
+        display: flex;
+    }
+    .splide__track,
+    .splide__list,
+    .splide__slide {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 832px) {
+    .desc_text {
+        padding: 2vw;
+        padding-bottom: 3em;
+        margin-bottom: 3em;
+    }
+
+    .desc_text h2 {
+        margin-block: 3vh;
+        font-size: 2.8vmax;
+    }
+
+    .desc_text h3:after {
+        content: "";
+        display: block;
+        height: 3px;
+        bottom: -10px;
+        width: 10%;
+        background: var(--main-yellow-color);
+    }
+
+    .desc_text div h3 {
+        margin-block: 2vh;
+        font-size: 2.6vmax;
+    }
+
+    .desc_text div p {
+        text-justify: auto;
+        font-size: 2.4vmax;
+    }
+
+    .splide__pagination {
+        position: initial;
+        transform: translateY(-1.4em);
+    }
+
+    .main_wrapper {
+        margin: 15vw 1em 0 1em;
+    }
+
+}

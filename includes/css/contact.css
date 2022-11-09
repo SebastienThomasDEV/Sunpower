@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@600&display=swap');
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p,
+a {
+    font-family: 'Inter', sans-serif;
+}
+
+/* BANNIERE TITRE */
+
+div.title-content {
+    height: fit-content;
+    padding: 45px 10px 45px 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    width: 100%;
+    margin-top: 19em;
+    background: #181925;
+    box-shadow: 0px -10px 12px rgba(0, 0, 0, 0.25), 0px 10px 12px rgba(0, 0, 0, 0.15);
+    transform: rotate(-3.51deg);
+    text-align: center;
+    color: var(--main-yellow-color);
+}
+
+div.title-content h2,
+div.title-content h3,
+div.title-content hr {
+    transform: rotate(3.51deg) !important;
+}
+
+
+div.title-content hr {
+    width: 5%;
+    background-color: var(--main-yellow-color);
+    border: none;
+    height: 1px;
+}
+
+/* SELECTION TYPE DE FORMULAIRE */
+
+div.select-type {
+    text-align: center;
+    width: 80%;
+    margin: 100px auto 0 auto;
+    color: var(--main-dark-color);
+    display: flex;
+    justify-content: center;
+}
+
+div.select-type div.cards {
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+}
+
+div.select-type div.cards div.card {
+    background-color: var(--main-yellow-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+/* FORMULAIRE */
+
+.inputfile+label {
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--main-green-color);
+    color: var(--main-font-color);
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputfile:focus+label {
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5);
+    transition: .3s ease-in-out;
+}
+
+.inputfile+label:hover {
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5);
+    transition: .3s ease-in-out;
+}
+
+input[type="file"] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.upload svg {
+    margin-right: 10px;
+}
+
+.mailing-form {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 15vmax;
+    background-color: var(--main-yellow-color);
+    padding: 1vw;
+    border-radius: 10px;
+    margin-block: 5vh;
+}
+
+.form_wrapper {
+    flex: 3;
+    margin-left: 1vw;
+}
+
+.mailing_wrapper {
+    display: flex;
+    margin-bottom: 0.8vh;
+}
+
+ /* LIGNES DE FORMLAIRE */
+
+.sidebyside {
+    display: flex;
+    gap: 1vw;
+    margin-bottom: 3vh;
+    flex: 1;
+}
+
+.sidebyside div {
+    flex: 1;
+    margin-inline: 5px;
+}
+
+.sidebyside div .label {
+    height: 75%;
+}
+
+.sidebyside .label_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* BOUTON ENVOYER */
+
+#submit_btn {
+    margin-top: 2vh;
+    width: fit-content;
+    float: right;
+    background-color: var(--main-green-color);
+    color: var(--main-font-color);
+    height: 60px;
+    width: 200px;
+    border-radius: 15px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5);
+    transition: .3s ease-in-out;
+}
+
+#submit_btn:hover,
+#submit_btn:focus {
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(255, 255, 255, .5);
+    box-shadow: 0px 0px 8px 2px rgba(255, 255, 255, 0.5);
+    transition: .3s ease-in-out;
+}
+
+/* CHAMPS DE FORMULAIRE */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.sidebyside input[type="text"],
+.sidebyside input[type="email"],
+.sidebyside input[type="tel"] {
+    width: 100%;
+    max-width: inherit;
+    height: 3rem;
+}
+
+.sidebyside input[type="text"],
+.sidebyside input[type="email"],
+.sidebyside input[type="tel"],
+textarea {
+    background-color: var(--main-font-color);
+    border: 3px solid var(--main-green-color);
+    border-radius: 5px;
+}
+
+.sidebyside input.invalid {
+    border: 3px solid red;
+}
+
+.sidebyside input:focus.invalid {
+    outline: none;
+}
+  
+
+/* COORDONNEES */
+
+.infos {
+    flex: 1;
+    padding: 2vw;
+    border-radius: 10px;
+    background-color: var(--main-green-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.infos h2 {
+    color: var(--main-yellow-color);
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.infos hr {
+    width: 50%;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: var(--main-yellow-color);
+    height: 2px;
+    border-radius: 100%;
+}
+
+.infos.pro {
+    justify-content: space-evenly;
+}
+
+.details {
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.details span {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+/* STYLE FORMULAIRE */
+
+div.mailing-form div.infos span p {
+    color: var(--main-font-color);
+    margin: 10px 10px 10px 10px;
+}
+
+div.mailing-form div.infos span svg {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    border-radius: 100%;
+    background-color: var(--main-yellow-color);
+    color: var(--main-green-color);
+}
+
+#description {
+    resize: none;
+    width: 98.3%;
+    height: 15em;
+}

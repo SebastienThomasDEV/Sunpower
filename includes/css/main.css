@@ -16,9 +16,16 @@ a {
 /* STYLE DE LA MAP */
 #map {
     margin-top: 3em;
-    height: 400px;
-    margin-bottom: -15px;
-    margin-inline: 3em;
+    height: 100%;
+    width: 80%;
+    margin-bottom: 50px;
+
+}
+
+.map_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* STYLE DE LA BANNIERE*/
@@ -26,7 +33,8 @@ a {
     height: fit-content;
     padding: 45px 10px 45px 10px;
     margin-left: -10px;
-    margin-right: -10px;;
+    margin-right: -10px;
+    ;
     width: 100%;
     margin-top: 19em;
     background: #181925;
@@ -41,7 +49,7 @@ a {
 .title-content h2,
 .title-content h3,
 .title-content hr {
-    transform: rotate(3.51deg)!important;
+    transform: rotate(3.51deg) !important;
 }
 
 /* STYLE DU SEPARATEUR*/

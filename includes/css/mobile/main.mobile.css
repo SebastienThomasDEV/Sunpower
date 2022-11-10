@@ -4,12 +4,15 @@
     .main_wrapper {
         display: flex;
     }
+
     .splide__track,
     .splide__list,
     .splide__slide {
         height: 100%;
         width: 100%;
     }
+
+    #map {}
 }
 
 @media (max-width: 832px) {
@@ -52,4 +55,7 @@
         margin: 15vw 1em 0 1em;
     }
 
+    #map {
+        width: 100%;
+    }
 }

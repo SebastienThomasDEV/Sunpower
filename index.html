@@ -19,8 +19,7 @@
     <link rel="stylesheet" href="/includes/css/footer.css">
     <link rel="stylesheet" href="/includes/css/mobile/footer.mobile.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
-    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
-    crossorigin=""/>
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
     <link href="/includes/css/fa/all.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/includes/assets/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/includes/assets/icons/favicon-32x32.png">
@@ -34,9 +33,6 @@
     <script defer src="/includes/js/fa/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
-    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
-    crossorigin=""></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js" defer></script>
     <script src="/includes/js/map.js"></script>
@@ -45,6 +41,10 @@
     <script src="/includes/js/nav.js" defer></script>
     <script src="/includes/js/slider.js" defer></script>
     <script src="/includes/js/anim.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+        integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin="" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
 
 <body>
 
@@ -135,7 +135,8 @@
             <hr>
         </div>
 
-        <div id="map" aria-label="Carte interactive avec la position des implantations"></div>
+        <div aria-label="Carte interactive avec la position des implantations" class="map_wrapper"><img
+                src="includes/assets/phpoEgvK9.jpg" id="map" alt=""></div>
     </div>
 
     <!-- Footer -->
@@ -206,9 +207,9 @@
 
     <div class="top_btn" id="top_btn" onmouseover="ch_op_b(this)" onmouseout="ch_op_a(this)" onClick="GoTop()"
         aria-label="Bouton vers le haut"><i class="fa-solid fa-arrow-up fa-2x"></i></div>
-    <script async
+    <!-- <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4Gw-yZQM1X7S6bq0CK3M51MTQGzV9KrI&callback=initMap"
-        defer></script>
+        defer></script> -->
     <script src="/includes/js/scrollreveal.js"></script>
 </body>
 

@@ -63,13 +63,13 @@ function validity() {
 
 //charge le code html du form pro
 function load_pro() {
-    $("#form-container").load('./../templates/pro-contact.html');
+    $("#form-container").load('./../includes/templates/pro-contact.html');
 }
 //charge le code html du form particulier
 function load_lambda() {
-    $("#form-container").load('./../templates/lambda-contact.html');
+    $("#form-container").load('./../includes/templates/lambda-contact.html');
 }
 //charge le code html du form syndic
 function load_syndic() {
-    $("#form-container").load('./../templates/syndic-contact.html');
+    $("#form-container").load('./../includes/templates/syndic-contact.html');
 }
